@@ -1,0 +1,64 @@
+.movies-page {
+    min-height: 100vh;
+    background-color: var(--netflix-black);
+}
+
+/* Hero Section */
+.movies-page__hero {
+    position: relative;
+    height: 50vh;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 4%;
+    margin-top: calc(var(--header-height) * -1);
+    padding-top: calc(var(--header-height) + 2rem);
+}
+
+.movies-page__hero-gradient {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to right, rgba(20, 20, 20, 0.9) 0%, rgba(20, 20, 20, 0.6) 40%, transparent 70%),
+        linear-gradient(to top, var(--netflix-black) 0%, transparent 50%);
+}
+
+.movies-page__hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+}
+
+/* Filter Section */
+.movies-page__filter {
+    padding: 1.5rem 4%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Content Section */
+.movies-page__content {
+    padding-bottom: 2rem;
+}
+
+.movies-page .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .movies-page__hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+
+    .movies-page__filter {
+        padding: 1rem 3%;
+    }
+}

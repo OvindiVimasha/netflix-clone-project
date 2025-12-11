@@ -1,0 +1,82 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--netflix-black);
+}
+
+.main-content {
+  flex: 1;
+  margin-top: var(--header-height);
+}
+
+/* 404 Not Found Page */
+.not-found {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://assets.nflxext.com/ffe/siteui/vlv3/a73c4363-1dcd-4719-b3b1-3725418fd91d/6a00c925-a36f-4e98-a17a-a04c180bfac4/US-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.not-found__content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.not-found h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.not-found p {
+  font-size: 1.5rem;
+  color: var(--netflix-white);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.not-found .btn {
+  margin-bottom: 2rem;
+}
+
+.not-found .error-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-left: 3px solid var(--netflix-red);
+  font-size: 1.5rem;
+}
+
+.not-found .error-code span {
+  font-weight: 400;
+  color: var(--netflix-gray-light);
+}
+
+.not-found .error-code strong {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .not-found h1 {
+    font-size: 2rem;
+  }
+
+  .not-found p {
+    font-size: 1.125rem;
+  }
+
+  .not-found .error-code {
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
