@@ -19,3 +19,5 @@ A pixel-perfect recreation of the Netflix user interface built with modern React
 -   **Styling**: Vanilla CSS (Custom styling without frameworks)
 -   **State Management**: React Context API
 -   **Data Source**: [The Movie Database (TMDB) API](https://www.themoviedb.org/)
+
+<img width="1759" height="818" alt="Screenshot 2025-12-11 144323" src="https://github.com/user-attachments/assets/b680205a-eae6-4ae5-9208-57c6aaee9388" />
